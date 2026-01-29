@@ -1,0 +1,7 @@
+# Python dependencies for Qwen local expansion (tools/qwen_worker.py and tools/download_qwen_model.py)
+transformers>=4.51.0
+accelerate>=0.30.0
+safetensors>=0.4.3
+huggingface_hub>=0.23.0
+
+# torch is platform-specific (CPU/CUDA). Install separately following PyTorch's official instructions.

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuzzyWord · 形近词 / 近义词学习</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <div class="title">FuzzyWord · 单词学习拓展</div>
+        <div class="subtitle">输入一个英文单词，先得到“形近词”（拼写易混淆），再一键用本地 Qwen 模型生成“近义词 / 相关表达 / 例句”，帮助你学习和记忆。</div>
+      </div>
+      <div class="badge">离线模式 · 本地词典 / 可选 Qwen</div>
+    </header>
+
+    <div class="panel">
+      <div class="search-row">
+        <input id="wordInput" type="text" placeholder="输入英文单词（例如 affect）" autocomplete="off" />
+        <button class="btn" id="searchBtn">查形近词</button>
+        <button class="btn btn-secondary" id="expandBtn">一键拓展</button>
+        <button class="btn btn-ghost" id="markBtn" title="把当前单词加入“已学单词”">已学 ✓</button>
+      </div>
+      <div class="chips-block">
+        <div class="chips-title">示例</div>
+        <div class="chips" id="demoChips"></div>
+      </div>
+      <div class="chips-block">
+        <div class="chips-title">已学单词</div>
+        <div class="chips" id="learnedChips"></div>
+      </div>
+
+      <div class="status" id="status">等待输入…</div>
+
+      <section class="section">
+        <div class="section-title">形近词（拼写易混淆）</div>
+        <div class="results" id="results"></div>
+      </section>
+
+      <section class="section">
+        <div class="section-title">近义词 / 相关表达（Qwen 本地模型，可选）</div>
+        <div class="llm" id="llm"></div>
+      </section>
+    </div>
+
+    <footer>
+      API：<code>/api/search?word=affect&k=7</code>（形近词），<code>/api/expand?word=affect&k=7</code>（形近词 + Qwen 拓展）。
+      <span style="margin-left:10px;"><a href="/library.html">离线拓展库</a></span>
+    </footer>
+  </div>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>

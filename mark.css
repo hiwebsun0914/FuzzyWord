@@ -1,0 +1,37 @@
+﻿pagetitle {display: block;font-size: 1em;font-weight: normal;background-color: #0055aa;color: white;text-align: center; text-decoration:none}
+a.goto {display: inline-block;width: 8.4%; font-size:85%;line-height:1.05em}
+a.goto {color:white;font-weight:normal;}
+mark:hover {background-color:gold;color:green;font-size:105%;padding: 0 1px 0 1px;}
+a.gotoled {color:gold;font-weight:bold}
+a.gotoled {display: inline-block;width: 16%; font-size:100%;line-height:1.05em}
+a.this {font-weight:bold; color: #ffff35;text-decoration:none;font-family:georgia}
+a.this:before{content:"▫▫▫▫";font-size:97%; color:#fcc403; content-box-shadow: 10px 10px 10px 10px yellow inset;margin-bottom:4px;margin-right:3px}
+a{text-decoration:none;}
+
+a.this:after{content:"▫▫▫▫";font-size:97%; color:#fcc403; content-box-shadow: 10px 10px 10px 10px yellow inset;margin-bottom:4px;margin-left:3px}
+a.gotoled:hover {background-color:green;color:white;}
+/*h1.content_index {color:#0038a8;text-align:center;border-bottom:1px dashed grey;}*/
+
+mark{background-color:white; letter-spacing: 0.4px; font-family: serif,georgia; color: darkblue; padding: 0 2px 0 2px; font-weight: bold; font-size:105%;text-decoration:none}
+a.word{color:#6f6f6f; font-size:95%;display:inline-block}
+split{color:#369}
+
+
+mark2 {background-color:white; color:darkgreen ;font-weight: normal;font-size:100%;}
+mark2:hover {background-color:lightgreen;color:darkred;font-weight: bold;font-size:105%;}
+mark3:hover {background-color:lightgreen;color:darkred;font-weight: bold;font-size:105%;}
+
+mark4 {background-color:white; letter-spacing: 0.4px; font-family: serif,georgia; color: darkred; padding: 0 2px 0 2px; font-weight: bold; font-size:105%;text-decoration:none}
+mark5 {background-color:white; color:darkblue ;font-weight: normal;font-size:100%;}
+mark4:hover {background-color:yellow;color:green;font-size:105%;padding: 0 1px 0 1px;}
+mark5:hover {background-color:lightgreen;color:darkred;font-weight: bold;font-size:105%;}
+
+hwlt{                           /*设置是否在页面内显示词条列表*/
+/*display:none;*/               /*如果不想显示则把/*display:none;*改为display:none*/
+}
+
+
+img{                           /*设置图片样式*/
+width:100%;               /*设置图片大小*/
+}
+

@@ -1,0 +1,30 @@
+# OS / Editor
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+*.log
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.python-version
+
+# Model & caches (do NOT commit)
+models/
+.hf/
+
+# Generated data (do NOT commit)
+data/qwen_cache.jsonl
+
+# Optional: local archives
+*.zip
+

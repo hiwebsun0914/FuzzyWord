@@ -1,0 +1,13 @@
+{
+  "name": "fuzzyword",
+  "version": "0.1.0",
+  "description": "Offline English word study: confusables + (optional) Qwen local expansion with disk cache.",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node server.js",
+    "precompute": "node tools/precompute_qwen_cache.js",
+    "download-model": "python tools/download_qwen_model.py"
+  }
+}
+

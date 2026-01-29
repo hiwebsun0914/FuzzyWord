@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FuzzyWord · 离线拓展库（Qwen 预计算）</title>
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .toolbar { display:flex; gap:10px; flex-wrap:wrap; align-items:center; margin-top: 6px; }
+    .link { color: #1d4ed8; text-decoration: none; font-weight: 700; }
+    .link:hover { text-decoration: underline; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 12px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <div>
+        <div class="title">离线拓展库（Qwen 预计算）</div>
+        <div class="subtitle">
+          这里直接读取磁盘缓存（<span class="mono">data/qwen_cache.jsonl</span>），用于快速查看近义词/搭配/例句等拓展内容。
+          <a class="link" href="/">返回主界面</a>
+        </div>
+      </div>
+      <div class="badge" id="cacheBadge">缓存状态加载中…</div>
+    </header>
+
+    <div class="panel">
+      <div class="search-row">
+        <input id="wordInput" type="text" placeholder="输入英文单词（例如 affect）" autocomplete="off" />
+        <button class="btn" id="queryBtn">查询离线拓展</button>
+      </div>
+      <div class="status" id="status">提示：先运行 <span class="mono">node tools/precompute_qwen_cache.js</span> 生成缓存。</div>
+
+      <section class="section">
+        <div class="section-title">大模型拓展（离线缓存）</div>
+        <div class="llm" id="llm"></div>
+      </section>
+    </div>
+
+    <footer>
+      API：<code>/api/llm?word=affect</code>（只读缓存） · <code>/api/cache/status</code>（缓存状态）
+    </footer>
+  </div>
+
+  <script src="/library.js" defer></script>
+</body>
+</html>
+
