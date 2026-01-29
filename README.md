@@ -1,8 +1,8 @@
 # FuzzyWord
 
 <p align="center">
-  <img src="./demo1.png" width="48%" />
-  <img src="./demo2.png" width="48%" />
+  <img src="./demo1.png" width="80%" />
+  <img src="./demo2.png" width="80%" />
 </p>
 
 一个可离线运行的英语单词学习工具：
